@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url(BKS.jpg);
+    background-size: cover;
+}
+
+h2, h3 {
+    color: rgb(0, 63, 145);
+    margin-bottom: 20px;
+}
+
+#listaPacientes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaPacientes li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#listaPacientes li:hover {
+    background-color: rgba(133, 133, 255, 0.5);
+    transform: translateX(5px);
+}
+.image1{
+   text-align: initial;
+}
+.btn-excluir {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+

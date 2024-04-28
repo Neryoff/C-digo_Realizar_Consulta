@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realização de Consulta</title>
+    <link rel="stylesheet" href="RC.css">
+</head>
+<body>
+<div class="container2">
+    <div class="image2">
+        <img src="DocImage.jpg" width="160px" height="160px">
+    </div>
+    <h2>Bem-vindo Dr.<span id="nomeMedico"></span></h2>
+    <h3>Realização de Consulta</h3><br>
+
+    <div  class="nome-container"><label for="nomePaciente"><b>Nome do paciente:</b></label></div>
+    <input type="text" id="nomePaciente" placeholder="Digite o nome do paciente"><br>
+    <div class="sexo-container"><label for="sexo"><b>Sexo:</b></label>
+    <input type="radio" id="masculino" name="sexo" value="M"><label for="masculino">M</label>
+    <input type="radio" id="feminino" name="sexo" value="F"><label for="feminino">F</label></div> <br>
+    <div class="idade-container"><label for="idade"><b>Idade:</b></label>
+    <input type="number" id="idade" name="idade"></div><br>
+
+
+
+    <!-- Abas -->
+    <div class="tab">
+        <button class="tablinks" onclick="abrirAba(event, 'queixas')">Queixas do Paciente</button>
+        <button class="tablinks" onclick="abrirAba(event, 'analise')">Análise Médica</button>
+    </div>
+
+<!-- Conteúdo das Abas -->
+    <div id="queixas" class="tabcontent">
+        <textarea id="txtQueixas" rows="4" placeholder="Insira as principais queixas do paciente aqui"></textarea>
+    </div>
+
+    <div id="analise" class="tabcontent">
+        <textarea id="txtAnalise" rows="4" placeholder="Registre sua análise e diagnóstico aqui"></textarea>
+    </div><br>
+
+<!-- Botão para encerrar consulta -->
+    <button onclick="validarForm()">Encerrar Consulta</button>
+</div>
+
+<!-- Tela de Loading -->
+<div id="loading">
+    <img src="loading.gif" alt="Carregando..." width="150px" height="150px">
+</div>
+
+<!-- Mensagem de Confirmação -->
+<div id="confirmacao" style="display:none;">
+    Consulta encerrada com sucesso!
+</div>
+
+<script src="RC.js"></script>
+<div class="image3"><img src="BLU.png" 
+    width="180px"
+    height="50px"></div>
+</body>
+</html>
